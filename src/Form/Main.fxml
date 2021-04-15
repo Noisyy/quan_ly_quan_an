@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Pictures/Java/Restaurant-Logo-VietDesigner.net-25a.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="190.0" prefHeight="54.0" prefWidth="607.0" style="-fx-background-color: purple;">
+         <children>
+            <JFXButton layoutX="43.0" layoutY="10.0" prefHeight="34.0" prefWidth="133.0" style="-fx-background-radius: 20;" text="Đăng nhập">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Pictures/Java/login.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="186.0" layoutY="10.0" prefHeight="34.0" prefWidth="133.0" style="-fx-background-radius: 20;" text="Đăng xuất">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Pictures/Java/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="328.0" layoutY="10.0" prefHeight="34.0" prefWidth="133.0" style="-fx-background-radius: 20;" text="Đổi mật khẩu">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Pictures/Java/password.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="187.0" layoutY="54.0" prefHeight="394.0" prefWidth="614.0" />
+      <AnchorPane layoutY="151.0" prefHeight="298.0" prefWidth="187.0" style="-fx-background-color: purple;">
+         <children>
+            <JFXButton prefHeight="42.0" prefWidth="187.0" style="-fx-background-color: purple;" text="Quản lý nhà hàng">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Pictures/Java/restaurant.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font></JFXButton>
+            <JFXButton layoutY="42.0" prefHeight="42.0" prefWidth="187.0" style="-fx-background-color: purple;" text="Quản lý thực đơn">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Pictures/Java/cutlery.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font></JFXButton>
+            <JFXButton layoutY="84.0" prefHeight="42.0" prefWidth="187.0" style="-fx-background-color: purple;" text="Thống kê">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Pictures/Java/clipboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="128.0" prefHeight="42.0" prefWidth="187.0" style="-fx-background-color: purple;" text="Thanh toán">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Pictures/Java/receipt.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font></JFXButton>
+            <JFXButton layoutY="170.0" prefHeight="42.0" prefWidth="187.0" style="-fx-background-color: purple;" text="Thoát">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Pictures/Java/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font></JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

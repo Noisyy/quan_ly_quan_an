@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Form.Controller">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Pictures/Java/Restaurant-Logo-VietDesigner.net-25a.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="75.0" layoutX="117.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Pictures/Java/locker_53876-25496.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="1.0" layoutY="106.0" prefHeight="24.0" prefWidth="63.0" text="Tài Khoản" />
+            <Label layoutX="1.0" layoutY="153.0" prefHeight="24.0" prefWidth="63.0" text="Mật Khẩu" />
+            <JFXButton layoutX="65.0" layoutY="232.0" prefHeight="36.0" prefWidth="174.0" text="Đăng nhập" />
+            <JFXButton layoutX="65.0" layoutY="282.0" prefHeight="36.0" prefWidth="174.0" text="Thoát" />
+            <TextField layoutX="77.0" layoutY="105.0" prefHeight="26.0" prefWidth="191.0" />
+            <PasswordField layoutX="78.0" layoutY="153.0" prefHeight="26.0" prefWidth="192.0" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
