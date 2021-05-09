@@ -12,7 +12,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="448.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Form.ThongKe">
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Form.ThongKe">
    <children>
       <Label layoutX="170.0" layoutY="391.0" prefHeight="42.0" prefWidth="80.0" text="Tên món ăn:" />
       <DropdownButton layoutX="250.0" layoutY="398.0" prefHeight="27.0" prefWidth="118.0">
@@ -30,7 +30,7 @@
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Pictures/Java/diskette.png" />
+                  <Image url="@Image/diskette.png" />
                </image>
             </ImageView>
          </graphic>
@@ -39,7 +39,7 @@
          <graphic>
             <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Pictures/Java/cancel.png" />
+                  <Image url="@Image/cancel.png" />
                </image>
             </ImageView>
          </graphic>

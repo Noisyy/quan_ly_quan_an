@@ -21,7 +21,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="436.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Form.Nhanvien">
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Form.QuanLyNhaHang">
    <children>
       <TabPane prefHeight="498.0" prefWidth="739.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
@@ -29,7 +29,7 @@
                <content>
                   <BorderPane prefHeight="387.0" prefWidth="734.0">
                      <bottom>
-                        <TableView prefHeight="278.0" prefWidth="734.0" BorderPane.alignment="CENTER">
+                        <TableView prefHeight="278.0" prefWidth="822.0" BorderPane.alignment="CENTER">
                           <columns>
                             <TableColumn prefWidth="75.0" text="Mã nhân viên" />
                             <TableColumn prefWidth="75.0" text="Họ" />
@@ -60,65 +60,65 @@
                            <children>
                               <Label prefWidth="234.0" text="Mã nhân viên">
                                  <graphic>
-                                    <TextField prefHeight="26.0" prefWidth="147.0" />
+                                    <TextField fx:id="txtmanhanvienQLNV" prefHeight="26.0" prefWidth="147.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Họ" GridPane.rowIndex="1">
                                  <graphic>
-                                    <TextField prefHeight="26.0" prefWidth="147.0" />
+                                    <TextField fx:id="txthoQLNV" prefHeight="26.0" prefWidth="147.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Tên" GridPane.rowIndex="2">
                                  <graphic>
-                                    <TextField prefHeight="26.0" prefWidth="147.0" />
+                                    <TextField fx:id="txttenQLNV" prefHeight="26.0" prefWidth="147.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Ngày sinh" GridPane.columnIndex="1">
                                  <graphic>
-                                    <DatePicker prefHeight="26.0" prefWidth="163.0" />
+                                    <DatePicker fx:id="dpngaysinhQLNV" prefHeight="26.0" prefWidth="163.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Giới tính" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <graphic>
-                                    <ChoiceBox prefHeight="28.0" prefWidth="163.0" />
+                                    <ChoiceBox fx:id="cbgioitinhQLNV" prefHeight="28.0" prefWidth="163.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Điện thoại" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                  <graphic>
-                                    <TextField prefHeight="26.0" prefWidth="162.0" />
+                                    <TextField fx:id="txtdienthoaiQLNV" prefHeight="26.0" prefWidth="162.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Địa chỉ" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                  <graphic>
-                                    <TextArea prefHeight="84.0" prefWidth="181.0" />
+                                    <TextArea fx:id="txtdiachiQLNV" prefHeight="84.0" prefWidth="181.0" />
                                  </graphic>
                               </Label>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Thêm" GridPane.rowIndex="3">
+                              <Button fx:id="btnthemQLNV" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Thêm" GridPane.rowIndex="3">
                                  <GridPane.margin>
                                     <Insets left="160.0" />
                                  </GridPane.margin>
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/add-file.png" />
+                                          <Image url="@Image/add-file.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Xóa" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <Button fx:id="btnxoaQLNV" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Xóa" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/delete.png" />
+                                          <Image url="@Image/delete.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <Button fx:id="btnsuaQLNV" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/edit.png" />
+                                          <Image url="@Image/edit.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -126,11 +126,11 @@
                                     <Insets left="85.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Lưu" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <Button fx:id="btnluuQLNV" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Lưu" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/diskette.png" />
+                                          <Image url="@Image/diskette.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -138,11 +138,11 @@
                                     <Insets left="170.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Hủy" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                              <Button fx:id="btnhuyQLNV" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Hủy" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/cancel.png" />
+                                          <Image url="@Image/cancel.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -182,22 +182,22 @@
                            <children>
                               <Label text="Tên tài khoản">
                                  <graphic>
-                                    <TextField />
+                                    <TextField fx:id="txttentaikhoanTK" />
                                  </graphic>
                               </Label>
                               <Label text="Mật khẩu" GridPane.rowIndex="1">
                                  <graphic>
-                                    <TextField />
+                                    <TextField fx:id="txtmatkhauTK" />
                                  </graphic>
                               </Label>
                               <Label text="Mã nhân viên" GridPane.columnIndex="1">
                                  <graphic>
-                                    <TextField />
+                                    <TextField fx:id="txtmanhanvienTK" />
                                  </graphic>
                               </Label>
                               <Label text="Tên nhân viên" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <graphic>
-                                    <TextField />
+                                    <TextField fx:id="txttennhanvienTK" />
                                  </graphic>
                               </Label>
                               <Label text="Quyền Truy Cập" GridPane.columnIndex="2">
@@ -205,32 +205,32 @@
                                     <Insets left="66.0" />
                                  </GridPane.margin>
                               </Label>
-                              <JFXRadioButton prefHeight="18.0" prefWidth="85.0" text="Quản lý" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                              <JFXRadioButton prefHeight="18.0" prefWidth="78.0" text="Khu vực" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                              <JFXRadioButton fx:id="rbquanlyTK" prefHeight="18.0" prefWidth="85.0" text="Quản lý" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <JFXRadioButton fx:id="rbkhuTK" prefHeight="18.0" prefWidth="78.0" text="Khu vực" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                  <GridPane.margin>
                                     <Insets left="83.0" />
                                  </GridPane.margin>
                               </JFXRadioButton>
-                              <JFXRadioButton prefHeight="18.0" prefWidth="78.0" text="Gọi món" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                              <JFXRadioButton fx:id="rbgoimonTK" prefHeight="18.0" prefWidth="78.0" text="Gọi món" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                  <GridPane.margin>
                                     <Insets left="166.0" />
                                  </GridPane.margin>
                               </JFXRadioButton>
-                              <JFXRadioButton prefHeight="18.0" prefWidth="89.0" text="Doanh thu" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                              <JFXRadioButton fx:id="rbdoanthuTK" prefHeight="18.0" prefWidth="89.0" text="Doanh thu" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                  <GridPane.margin>
                                     <Insets left="135.0" />
                                  </GridPane.margin>
                               </JFXRadioButton>
-                              <JFXRadioButton prefHeight="18.0" prefWidth="89.0" text="Thực đơn" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                              <JFXRadioButton fx:id="rbthucdonTK" prefHeight="18.0" prefWidth="89.0" text="Thực đơn" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                  <GridPane.margin>
                                     <Insets left="35.0" />
                                  </GridPane.margin>
                               </JFXRadioButton>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Thêm" GridPane.rowIndex="3">
+                              <Button fx:id="btnthemTK" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Thêm" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/add-file.png" />
+                                          <Image url="@Image/add-file.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -238,20 +238,20 @@
                                     <Insets left="160.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Xóa" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <Button fx:id="btnxoaTK" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Xóa" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/delete.png" />
+                                          <Image url="@Image/delete.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <Button fx:id="btnsuaTK" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/edit.png" />
+                                          <Image url="@Image/edit.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -262,11 +262,11 @@
                                     <Insets left="86.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Lưu" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <Button fx:id="btnluuTK" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Lưu" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/diskette.png" />
+                                          <Image url="@Image/diskette.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -274,11 +274,11 @@
                                     <Insets left="170.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Hủy" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                              <Button fx:id="btnhuyTK" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Hủy" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/cancel.png" />
+                                          <Image url="@Image/cancel.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -345,50 +345,50 @@
                            <children>
                               <Label prefWidth="234.0" text="Mã bàn">
                                  <graphic>
-                                    <TextField prefHeight="26.0" prefWidth="147.0" />
+                                    <TextField fx:id="txtmabanQLB" prefHeight="26.0" prefWidth="147.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Trạng thái" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <graphic>
-                                    <ChoiceBox prefHeight="28.0" prefWidth="161.0" />
+                                    <ChoiceBox fx:id="cbtrangthaiQLB" prefHeight="28.0" prefWidth="161.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Tên bàn" GridPane.columnIndex="1">
                                  <graphic>
-                                    <ChoiceBox prefHeight="28.0" prefWidth="162.0" />
+                                    <ChoiceBox fx:id="cbtenbanQLB" prefHeight="28.0" prefWidth="162.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Mô tả" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                  <graphic>
-                                    <TextArea prefHeight="84.0" prefWidth="181.0" />
+                                    <TextArea fx:id="txtmotaQLB" prefHeight="84.0" prefWidth="181.0" />
                                  </graphic>
                               </Label>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Thêm" GridPane.rowIndex="3">
+                              <Button fx:id="btnthemQLB" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Thêm" GridPane.rowIndex="3">
                                  <GridPane.margin>
                                     <Insets left="160.0" />
                                  </GridPane.margin>
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/add-file.png" />
+                                          <Image url="@Image/add-file.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Xóa" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <Button fx:id="btnxoaQLB" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Xóa" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/delete.png" />
+                                          <Image url="@Image/delete.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <Button fx:id="btnsuaQLB" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/edit.png" />
+                                          <Image url="@Image/edit.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -396,11 +396,11 @@
                                     <Insets left="85.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Lưu" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <Button fx:id="btnluuQLB" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Lưu" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/diskette.png" />
+                                          <Image url="@Image/diskette.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -408,11 +408,11 @@
                                     <Insets left="170.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Hủy" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                              <Button fx:id="btnhuyQLB" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Hủy" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/cancel.png" />
+                                          <Image url="@Image/cancel.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -422,7 +422,7 @@
                               </Button>
                               <Label prefWidth="234.0" text="Tên khu vực" GridPane.rowIndex="1">
                                  <graphic>
-                                    <ChoiceBox prefHeight="28.0" prefWidth="147.0" />
+                                    <ChoiceBox fx:id="cbtenkhuvucQLB" prefHeight="28.0" prefWidth="147.0" />
                                  </graphic>
                               </Label>
                            </children>
@@ -438,7 +438,7 @@
                   </BorderPane>
                </content>
             </Tab>
-            <Tab text="Quản Lý Khu Vực">
+            <Tab onSelectionChanged="#QLKV" text="Quản Lý Khu Vực">
                <content>
                   <BorderPane prefHeight="387.0" prefWidth="734.0">
                      <bottom>
@@ -471,45 +471,45 @@
                            <children>
                               <Label prefWidth="234.0" text="Mã khu vực">
                                  <graphic>
-                                    <TextField prefHeight="26.0" prefWidth="147.0" />
+                                    <TextField fx:id="txtmakhuvucQLKV" prefHeight="26.0" prefWidth="147.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Tên khu vực" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <graphic>
-                                    <ChoiceBox prefHeight="28.0" prefWidth="144.0" />
+                                    <ChoiceBox fx:id="cbtenkhuvucQLKV" prefHeight="28.0" prefWidth="144.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Mô tả" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                  <graphic>
-                                    <TextArea prefHeight="84.0" prefWidth="181.0" />
+                                    <TextArea fx:id="txtmotaQLKV" prefHeight="84.0" prefWidth="181.0" />
                                  </graphic>
                               </Label>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Thêm" GridPane.rowIndex="3">
+                              <Button fx:id="btnthemQLKV" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Thêm" GridPane.rowIndex="3">
                                  <GridPane.margin>
                                     <Insets left="160.0" />
                                  </GridPane.margin>
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/add-file.png" />
+                                          <Image url="@Image/add-file.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Xóa" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <Button fx:id="btnxoaQLKV" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Xóa" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/delete.png" />
+                                          <Image url="@Image/delete.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <Button fx:id="btnsuaQLKV" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/edit.png" />
+                                          <Image url="@Image/edit.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -517,11 +517,11 @@
                                     <Insets left="85.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Lưu" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <Button fx:id="btnluuQLKV" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Lưu" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/diskette.png" />
+                                          <Image url="@Image/diskette.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -529,11 +529,11 @@
                                     <Insets left="170.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Hủy" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                              <Button fx:id="btnhuyQLKV" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Hủy" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../Pictures/Java/cancel.png" />
+                                          <Image url="@Image/cancel.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -543,7 +543,7 @@
                               </Button>
                               <Label prefWidth="234.0" text="Trạng thái" GridPane.rowIndex="1">
                                  <graphic>
-                                    <ChoiceBox prefHeight="28.0" prefWidth="147.0" />
+                                    <ChoiceBox fx:id="cbtrangthaiQLKV" prefHeight="28.0" prefWidth="147.0" />
                                  </graphic>
                               </Label>
                            </children>
@@ -576,7 +576,7 @@
                         </TableView>
                      </bottom>
                      <center>
-                        <Label text="Danh Sách Bàn Đang Trống" BorderPane.alignment="CENTER">
+                        <Label text="Danh Sách Bàn Đang Phục Vụ" BorderPane.alignment="CENTER">
                            <font>
                               <Font size="19.0" />
                            </font>
@@ -602,7 +602,7 @@
                         </TableView>
                      </bottom>
                      <center>
-                        <Label text="Danh Sách Bàn Đang Phục Vụ" BorderPane.alignment="CENTER">
+                        <Label text="Danh Sách Bàn Đang Trống" BorderPane.alignment="CENTER">
                            <font>
                               <Font size="19.0" />
                            </font>
