@@ -26,7 +26,7 @@
       <TextField layoutX="239.0" layoutY="356.0" prefHeight="26.0" prefWidth="118.0" />
       <Label layoutX="394.0" layoutY="338.0" prefHeight="35.0" prefWidth="85.0" text="Tổng tiền:" />
       <TextField layoutX="474.0" layoutY="343.0" prefHeight="26.0" prefWidth="118.0" styleClass="btn" stylesheets="@css/a.css" />
-      <Button layoutX="51.0" layoutY="335.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="86.0" style="-fx-border-radius: 20; -fx-background-radius: 20;" text="Lưu">
+      <Button fx:id="bt_Luu" layoutX="51.0" layoutY="335.0" mnemonicParsing="false" onMouseClicked="#Click_bt_Luu" prefHeight="42.0" prefWidth="86.0" style="-fx-border-radius: 20; -fx-background-radius: 20;" text="Lưu">
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -35,7 +35,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="51.0" layoutY="397.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="86.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" text="Thoát">
+      <Button fx:id="bt_Thoat" layoutX="51.0" layoutY="397.0" mnemonicParsing="false" onMouseClicked="#Click_bt_Thoat" prefHeight="42.0" prefWidth="86.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" text="Thoát">
          <graphic>
             <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                <image>

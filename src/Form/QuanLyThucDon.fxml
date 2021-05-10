@@ -55,20 +55,20 @@
                            <children>
                               <Label prefHeight="26.0" prefWidth="249.0" text="Mã loại thực đơn" GridPane.rowIndex="1">
                                  <graphic>
-                                    <TextField prefHeight="26.0" prefWidth="136.0" />
+                                    <TextField fx:id="tf_MaLoai_QLLTD" prefHeight="26.0" prefWidth="136.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Tên loại thực đơn" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <graphic>
-                                    <TextField prefHeight="26.0" prefWidth="118.0" />
+                                    <TextField fx:id="tf_TenLoai_QLLTD" prefHeight="26.0" prefWidth="118.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Trạng thái" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                  <graphic>
-                                    <ChoiceBox prefWidth="150.0" />
+                                    <ChoiceBox fx:id="cb_TrangThai_QLLTD" prefWidth="150.0" />
                                  </graphic>
                               </Label>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Thêm" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Them_QLLTD" mnemonicParsing="false" onMouseClicked="#Click_bt_Them_QLLTD" prefHeight="30.0" prefWidth="75.0" text="Thêm" GridPane.rowIndex="4">
                                  <GridPane.margin>
                                     <Insets left="160.0" />
                                  </GridPane.margin>
@@ -80,7 +80,7 @@
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Xóa" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Xoa_QLLTD" mnemonicParsing="false" onMouseClicked="#Click_bt_Xoa_QLLTD" prefHeight="30.0" prefWidth="75.0" text="Xóa" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -89,7 +89,7 @@
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Sua_QLLTD" mnemonicParsing="false" onMouseClicked="#Click_bt_Sua_QLLTD" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -101,7 +101,7 @@
                                     <Insets left="85.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Lưu" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Luu_QLLTD" mnemonicParsing="false" onMouseClicked="#Click_bt_Luu_QLLTD" prefHeight="30.0" prefWidth="75.0" text="Lưu" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -113,7 +113,7 @@
                                     <Insets left="170.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Thoát" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Thoat_QLLTD" mnemonicParsing="false" onMouseClicked="#Click_bt_Thoat_QLLTD" prefHeight="30.0" prefWidth="75.0" text="Thoát" GridPane.columnIndex="2" GridPane.rowIndex="4">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -174,20 +174,20 @@
                            <children>
                               <Label prefHeight="26.0" prefWidth="249.0" text="Mã thực đơn">
                                  <graphic>
-                                    <TextField prefHeight="26.0" prefWidth="120.0" />
+                                    <TextField fx:id="tf_MaTD_QLTD" prefHeight="26.0" prefWidth="120.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Tên thực đơn" GridPane.rowIndex="1">
                                  <graphic>
-                                    <TextField prefHeight="26.0" prefWidth="119.0" />
+                                    <TextField fx:id="tf_TenTD_QLTD" prefHeight="26.0" prefWidth="119.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Trạng thái" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                  <graphic>
-                                    <ChoiceBox prefHeight="28.0" prefWidth="122.0" />
+                                    <ChoiceBox fx:id="cb_TrangThai_QLTD" prefHeight="28.0" prefWidth="122.0" />
                                  </graphic>
                               </Label>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Thêm" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Them_QLTD" mnemonicParsing="false" onMouseClicked="#Click_bt_Them_QLTD" prefHeight="30.0" prefWidth="75.0" text="Thêm" GridPane.rowIndex="4">
                                  <GridPane.margin>
                                     <Insets left="160.0" />
                                  </GridPane.margin>
@@ -199,7 +199,7 @@
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Xóa" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Xoa_QLTD" mnemonicParsing="false" onMouseClicked="#Click_bt_Xoa_QLTD" prefHeight="30.0" prefWidth="75.0" text="Xóa" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -208,7 +208,7 @@
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Sua_QLTD" mnemonicParsing="false" onMouseClicked="#Click_bt_Sua_QLTD" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -220,7 +220,7 @@
                                     <Insets left="85.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Lưu" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Luu_QLTD" mnemonicParsing="false" onMouseClicked="#Click_bt_Luu_QLTD" prefHeight="30.0" prefWidth="75.0" text="Lưu" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -232,7 +232,7 @@
                                     <Insets left="170.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Thoát" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Thoat_QLTD" mnemonicParsing="false" onMouseClicked="#Click_bt_Thoat_QLTD" prefHeight="30.0" prefWidth="75.0" text="Thoát" GridPane.columnIndex="2" GridPane.rowIndex="4">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -246,22 +246,22 @@
                               </Button>
                               <Label prefWidth="234.0" text="Tên loại thực đơn" GridPane.rowIndex="2">
                                  <graphic>
-                                    <ChoiceBox prefHeight="28.0" prefWidth="121.0" />
+                                    <ChoiceBox fx:id="cb_LoaiTD_QLTD" prefHeight="28.0" prefWidth="121.0" />
                                  </graphic>
                               </Label>
                               <Label prefHeight="26.0" prefWidth="249.0" text="Đơn vị tính" GridPane.columnIndex="1">
                                  <graphic>
-                                    <TextField prefHeight="26.0" prefWidth="120.0" />
+                                    <TextField fx:id="tf_DonVi_QLTD" prefHeight="26.0" prefWidth="120.0" />
                                  </graphic>
                               </Label>
                               <Label prefHeight="26.0" prefWidth="249.0" text="Số lượng tồn" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <graphic>
-                                    <TextField prefHeight="26.0" prefWidth="120.0" />
+                                    <TextField fx:id="tf_SoLuongTon_QLTD" prefHeight="26.0" prefWidth="120.0" />
                                  </graphic>
                               </Label>
                               <Label prefHeight="26.0" prefWidth="249.0" text="Đơn giá" GridPane.columnIndex="2">
                                  <graphic>
-                                    <TextField prefHeight="26.0" prefWidth="120.0" />
+                                    <TextField fx:id="tf_DonGia_QLTD" prefHeight="26.0" prefWidth="120.0" />
                                  </graphic>
                               </Label>
                            </children>
@@ -316,7 +316,7 @@
                                     <DatePicker prefHeight="26.0" prefWidth="160.0" />
                                  </graphic>
                               </Label>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Thêm" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Them_QLGM" mnemonicParsing="false" onMouseClicked="#Click_bt_Them_QLGM" prefHeight="30.0" prefWidth="75.0" text="Thêm" GridPane.rowIndex="4">
                                  <GridPane.margin>
                                     <Insets left="160.0" />
                                  </GridPane.margin>
@@ -328,7 +328,7 @@
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Xóa" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Xoa_QLGM" mnemonicParsing="false" onMouseClicked="#Click_bt_Xoa_QLGM" prefHeight="30.0" prefWidth="75.0" text="Xóa" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -337,7 +337,7 @@
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Sua_QLGM" mnemonicParsing="false" onMouseClicked="#Click_bt_Luu_QLGM" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -349,7 +349,7 @@
                                     <Insets left="85.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Lưu" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Luu_QLGM" mnemonicParsing="false" onMouseClicked="#Click_bt_Luu_QLGM" prefHeight="30.0" prefWidth="75.0" text="Lưu" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -361,7 +361,7 @@
                                     <Insets left="170.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Thoát" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Thoat_QLGM" mnemonicParsing="false" onMouseClicked="#Click_bt_Thoat_QLGM" prefHeight="30.0" prefWidth="75.0" text="Thoát" GridPane.columnIndex="2" GridPane.rowIndex="4">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -375,12 +375,12 @@
                               </Button>
                               <Label prefHeight="26.0" prefWidth="249.0" text="Đơn giá" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                  <graphic>
-                                    <TextField prefHeight="26.0" prefWidth="120.0" />
+                                    <TextField fx:id="tf_DonGia_QLGM" prefHeight="26.0" prefWidth="120.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Loại thực đơn">
                                  <graphic>
-                                    <ChoiceBox prefHeight="28.0" prefWidth="122.0" />
+                                    <ChoiceBox fx:id="cb_LoaiTD_QLGM" prefHeight="28.0" prefWidth="122.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Tên thực đơn" GridPane.rowIndex="1">
@@ -390,17 +390,17 @@
                               </Label>
                               <Label prefWidth="234.0" text="Tên khu vực" GridPane.columnIndex="1">
                                  <graphic>
-                                    <ChoiceBox prefHeight="28.0" prefWidth="122.0" />
+                                    <ChoiceBox fx:id="cb_KhuVuc_QLGM" prefHeight="28.0" prefWidth="122.0" />
                                  </graphic>
                               </Label>
                               <Label prefWidth="234.0" text="Tên bàn" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <graphic>
-                                    <ChoiceBox prefHeight="28.0" prefWidth="122.0" />
+                                    <ChoiceBox fx:id="cb_Ban_QLGM" prefHeight="28.0" prefWidth="122.0" />
                                  </graphic>
                               </Label>
                               <Label prefHeight="26.0" prefWidth="249.0" text="Số lượng" GridPane.rowIndex="2">
                                  <graphic>
-                                    <TextField prefHeight="26.0" prefWidth="120.0" />
+                                    <TextField fx:id="tf_SoLuong_QLGM" prefHeight="26.0" prefWidth="120.0" />
                                  </graphic>
                               </Label>
                            </children>
