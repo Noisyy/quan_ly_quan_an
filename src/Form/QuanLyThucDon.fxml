@@ -23,7 +23,7 @@
    <children>
       <TabPane prefHeight="498.0" prefWidth="734.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-          <Tab text="Quản Lý Loại Thực Đơn">
+          <Tab fx:id="tab_QLLTD" onSelectionChanged="#Selection_QLLTD" text="Quản Lý Loại Thực Đơn">
                <content>
                   <BorderPane prefHeight="387.0" prefWidth="734.0">
                      <bottom>
@@ -135,7 +135,7 @@
                   </BorderPane>
                </content>
             </Tab>
-            <Tab text="Quản Lý Thực Đơn">
+            <Tab fx:id="tab_QLTD" onSelectionChanged="#Selection_QLTD" text="Quản Lý Thực Đơn">
                <content>
                   <BorderPane prefHeight="387.0" prefWidth="734.0">
                      <bottom>
@@ -274,7 +274,7 @@
                   </BorderPane>
                </content>
             </Tab>
-            <Tab text="Quản Lý Gọi Món">
+            <Tab fx:id="tab_QLGM" onSelectionChanged="#Selection_QLGM" text="Quản Lý Gọi Món">
                <content>
                   <BorderPane prefHeight="387.0" prefWidth="734.0">
                      <bottom>
