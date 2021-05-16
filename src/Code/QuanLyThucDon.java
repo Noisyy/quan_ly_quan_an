@@ -1,5 +1,6 @@
-package Form;
+package Code;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
@@ -97,6 +98,12 @@ public class QuanLyThucDon {
     @FXML
     private TextField tf_SoLuong_QLGM;
 
+    public void AnHienNutLuu(Boolean CongTac){
+        bt_Luu_QLLTD.setVisible(CongTac);
+        bt_Luu_QLGM.setVisible(CongTac);
+        bt_Luu_QLTD.setVisible(CongTac);
+    }
+    
     @FXML
     void Click_bt_Luu_QLGM(MouseEvent event) {
 
@@ -114,27 +121,32 @@ public class QuanLyThucDon {
 
     @FXML
     void Click_bt_Sua_QLLTD(MouseEvent event) {
-
+        AnHienNutLuu(false);
     }
 
     @FXML
     void Click_bt_Sua_QLTD(MouseEvent event) {
-
+        AnHienNutLuu(false);
     }
 
     @FXML
+    void Click_bt_Sua_QLGM(MouseEvent event){
+        AnHienNutLuu(false);
+    }
+    
+    @FXML
     void Click_bt_Them_QLGM(MouseEvent event) {
-
+        AnHienNutLuu(false);
     }
 
     @FXML
     void Click_bt_Them_QLLTD(MouseEvent event) {
-
+        AnHienNutLuu(false);
     }
 
     @FXML
     void Click_bt_Them_QLTD(MouseEvent event) {
-
+        AnHienNutLuu(false);
     }
 
     @FXML

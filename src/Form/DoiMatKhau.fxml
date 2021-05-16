@@ -13,27 +13,27 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txttaikhoan" layoutX="218.0" layoutY="67.0" prefHeight="26.0" prefWidth="224.0" />
+      <TextField fx:id="tf_TaiKhoan" layoutX="218.0" layoutY="67.0" prefHeight="26.0" prefWidth="224.0" />
       <Label layoutX="113.0" layoutY="109.0" prefHeight="27.0" prefWidth="104.0" text="Mật khẩu cũ:">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtmatkhaucu" layoutX="218.0" layoutY="110.0" prefHeight="26.0" prefWidth="224.0" />
+      <TextField fx:id="tf_MatKhauCu" layoutX="218.0" layoutY="110.0" prefHeight="26.0" prefWidth="224.0" />
       <Label layoutX="99.0" layoutY="154.0" prefHeight="27.0" prefWidth="118.0" text="Mật khẩu mới:">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtmatkhaumoi" layoutX="218.0" layoutY="155.0" prefHeight="26.0" prefWidth="224.0" />
+      <TextField fx:id="tf_MatKhauMoi" layoutX="218.0" layoutY="155.0" prefHeight="26.0" prefWidth="224.0" />
       <Label layoutX="27.0" layoutY="200.0" prefHeight="27.0" prefWidth="190.0" text="Nhập lại mật khẩu mới:">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtnhaplaimatkhaumoi" layoutX="218.0" layoutY="201.0" prefHeight="26.0" prefWidth="224.0" />
-      <Button fx:id="btnxacnhan" layoutX="217.0" layoutY="256.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="104.0" text="Xác nhận" />
-      <Button fx:id="btnthoat" layoutX="338.0" layoutY="256.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="104.0" text="Thoát" />
+      <TextField fx:id="tf_NhapLaiMatKhauMoi" layoutX="218.0" layoutY="201.0" prefHeight="26.0" prefWidth="224.0" />
+      <Button fx:id="bt_XacNhan" layoutX="217.0" layoutY="256.0" mnemonicParsing="false" onMouseClicked="#Click_bt_XacNhan" prefHeight="44.0" prefWidth="104.0" text="Xác nhận" />
+      <Button fx:id="bt_Thoat" layoutX="338.0" layoutY="256.0" mnemonicParsing="false" onMouseClicked="#Click_bt_Thoat" prefHeight="44.0" prefWidth="104.0" text="Thoát" />
       <Label layoutX="236.0" layoutY="23.0" text="Đổi Mật Khẩu">
          <font>
             <Font size="21.0" />

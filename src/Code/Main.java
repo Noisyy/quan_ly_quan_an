@@ -1,4 +1,4 @@
-package Form;
+package Code;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

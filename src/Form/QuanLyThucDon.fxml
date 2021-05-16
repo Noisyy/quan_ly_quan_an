@@ -63,11 +63,7 @@
                                     <TextField fx:id="tf_TenLoai_QLLTD" prefHeight="26.0" prefWidth="118.0" />
                                  </graphic>
                               </Label>
-                              <Label prefWidth="234.0" text="Trạng thái" GridPane.columnIndex="2" GridPane.rowIndex="1">
-                                 <graphic>
-                                    <ChoiceBox fx:id="cb_TrangThai_QLLTD" prefWidth="150.0" />
-                                 </graphic>
-                              </Label>
+                              <Label prefWidth="234.0" text="Trạng thái" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                               <Button fx:id="bt_Them_QLLTD" mnemonicParsing="false" onMouseClicked="#Click_bt_Them_QLLTD" prefHeight="30.0" prefWidth="75.0" text="Thêm" GridPane.rowIndex="4">
                                  <GridPane.margin>
                                     <Insets left="160.0" />
@@ -125,6 +121,7 @@
                                     <Insets left="10.0" />
                                  </GridPane.margin>
                               </Button>
+                              <ChoiceBox fx:id="cb_TrangThai_QLLTD" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                            </children>
                         </GridPane>
                      </top>
@@ -337,7 +334,7 @@
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button fx:id="bt_Sua_QLGM" mnemonicParsing="false" onMouseClicked="#Click_bt_Luu_QLGM" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                              <Button fx:id="bt_Sua_QLGM" mnemonicParsing="false" onMouseClicked="#Click_bt_Sua_QLGM" prefHeight="30.0" prefWidth="75.0" text="Sửa" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                  <graphic>
                                     <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
